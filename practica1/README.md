@@ -2,7 +2,7 @@
 
 |                                            | http://www.gobiernodecanarias.org/istac/api/ | http://www3.gobiernodecanarias.org/sanidad/scs/gc/18/Cita_Previa/index.html                                        |
 |--------------------------------------------|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| ¿Qué peticiones desencadena la consulta?   |                                              | ![peticiones](https://github.com/alu0101070650/uya-practicas-grupo13/blob/master/practica1/peticiones-sanidad.png) |
+| ¿Qué peticiones desencadena la consulta?   | ![peticiones](https://github.com/alu0101070650/uya-practicas-grupo13/blob/master/practica1/peticiones-istac.png) | ![peticiones](https://github.com/alu0101070650/uya-practicas-grupo13/blob/master/practica1/peticiones-sanidad.png) |
 | ¿Qué tipo de petición estás realizando?    |                                              | Una petición GET a http://www3.gobiernodecanarias.org/sanidad/scs/gc/18/Cita_Previa/index.html                     |
 | ¿Qué código de estatus devuelve?           |                                              | 200                                                                                                                |
 | ¿Qué DNS tiene el servidor?                | www.gobiernodecanarias.org                   | www3.gobiernodecanarias.org                                                                                        |
