@@ -9,8 +9,8 @@
 | ¿Qué IP tiene tiene el servidor?           | 93.188.136.129                               | 93.188.137.126                                                                                                     |
 | ¿La página tiene alguna cookie?, ¿Cuáles?  | No establece ninguna cookie            | No establece ninguna cookie                                                                                        |
 | ¿Qué idioma acepta?                        | en_US (ingles)                                             | en_US (ingles)                                                                                                     |
-| Alguna línea de código JavaScript          | No ejecuta JavaScript                                | if("undefined"==typeof jQuery) (bootstrap.js)                                                                      |
-| Alguna línea de código CSS que se aplique  | .section .der{float:right} (istac.css)                                       | border-bottom: 1px solid #e5e5e5; (styles.css)                                                                     |
-| Alguna línea de código HTML que se aplique | &lt;h1&bt;Catálogo de API de eDatos&lt;/h1&bt; (index.html)                                              | &lt;div class="container" style="padding-top:10px;"&bt; (index.html)                                                     |
+| Alguna línea de código JavaScript          | No ejecuta JavaScript                                | `if("undefined"==typeof jQuery)` (bootstrap.js)                                                                      |
+| Alguna línea de código CSS que se aplique  | `.section .der{float:right}` (istac.css)                                       | `border-bottom: 1px solid #e5e5e5;` (styles.css)                                                                     |
+| Alguna línea de código HTML que se aplique | `<h1>Catálogo de API de eDatos</h1>` (index.html)                                              | `<div class="container" style="padding-top:10px;">` (index.html)                                                     |
 
 
