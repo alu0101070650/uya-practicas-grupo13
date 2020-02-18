@@ -1,6 +1,8 @@
 # uya-practicas-grupo13
 
-Realizado por: 
-   Andrés Calimero García Perez
-   Paula Elena Expósito Estévez
-   Eduardo Nuez Wehbe 
+Miembros del grupo 13:
+
+* Andrés Calimero García Pérez
+* Paula Elena Expósito Estévez
+* Eduardo Nuez Wehbe
+
