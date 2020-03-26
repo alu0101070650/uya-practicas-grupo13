@@ -6,10 +6,8 @@ año de nacimiento, fecha de ingreso en la empresa, plus de productividad en %, 
 inicializando una variable, explica por qué se te exige este requisito).
 *************************/
 
-const YEAR = 2020;
-
 function calculate (data) {
-    let plusAntiguedad = (YEAR - data['ingreso']) / 3 * 0.1;
+    let plusAntiguedad = (new Date().getFullYear() - data['ingreso']) / 3 * 0.1;
     let edad = new Date().getFullYear() - data['año'];
     let sueldo = data['sueldo'] * (1 + plusAntiguedad + data['plusProductividad']);
     
