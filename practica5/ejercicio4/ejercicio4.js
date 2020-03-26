@@ -7,7 +7,7 @@ inicializando una variable, explica por qué se te exige este requisito).
 *************************/
 
 function calculate (data) {
-    let plusAntiguedad = (new Date().getFullYear() - data['ingreso']) / 3 * 0.1;
+    let plusAntiguedad = (new Date().getFullYear() - data['ingreso']) / 3 * data['plusAntiguedad'];
     let edad = new Date().getFullYear() - data['año'];
     let sueldo = data['sueldo'] * (1 + plusAntiguedad + data['plusProductividad']);
     
