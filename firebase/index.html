@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de tiempo</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script defer src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+
+    <h3>Anuncios</h3>
+
+    <div id=root></div>
+    <br>
+    <form id="crear-anuncio">
+        <label for="title">Titulo</label>
+        <input id="title" type="text" name="title" placeholder="Titulo del anuncio" />
+        <label for="details">Detalles</label>
+        <input id="details" type="text" name="details" placeholder="Detalles del anuncio" />
+        <input type="submit" value="Crear anuncio" />
+    </form>
+</body>
+
+</html>
