@@ -33,6 +33,8 @@ db.collection("anuncios").onSnapshot((querySnapshot) => {
   container.innerHTML = "";
   querySnapshot.forEach((doc) => {
     const p = document.createElement("p");
+    p.setAttribute('tabindex', '0');
+    p.setAttribute('aria-live', "assertive");
     p.innerHTML = `Anuncio ${doc.id}: ${doc.data().title}<br>${
       doc.data().details
     }`;
