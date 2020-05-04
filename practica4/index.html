@@ -1,5 +1,5 @@
-<!DOCTYPE html lang="es">
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -13,8 +13,10 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
   <!-- Scripts -->
+  <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script defer src="js/materialize.min.js"></script>
   <script defer src="js/init.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -24,21 +26,21 @@
     <nav class="red" role="navigation">
       <div class="nav-wrapper container">
         <ul class="right hide-on-med-and-down">
-          <li><a href="#home" tabindex="1">Inicio</a></li>
-          <li><a href="#description" tabindex="2">Que es un banco de tiempo?</a></li>
-          <li><a href="#features" tabindex="3">Caracteristicas</a></li>
-          <li><a href="#testimonies" tabindex="4">Testimonios</a></li>
-          <li><a href="#about-us" tabindex="5">Sobre nosotros</a></li>
-          <li><a href="#join-us" tabindex="6">Unete</a></li>
+          <li><a href="#home" tabindex="0">Inicio</a></li>
+          <li><a href="#description" tabindex="0">Que es un banco de tiempo?</a></li>
+          <li><a href="#features" tabindex="0">Caracteristicas</a></li>
+          <li><a href="#testimonies" tabindex="0">Testimonios</a></li>
+          <li><a href="#about-us" tabindex="0">Sobre nosotros</a></li>
+          <li><a href="#join-us" tabindex="0">Unete</a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav" aria-hidden="true">
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#description">Que es un banco de tiempo?</a></li>
-          <li><a href="#features">Caracteristicas</a></li>
-          <li><a href="#testimonies">Testimonios</a></li>
-          <li><a href="#about-us">Sobre nosotros</a></li>
-          <li><a href="#join-us">Unete</a></li>
+          <li><a href="#home" tabindex="-1">Inicio</a></li>
+          <li><a href="#description" tabindex="-1">Que es un banco de tiempo?</a></li>
+          <li><a href="#features" tabindex="-1">Caracteristicas</a></li>
+          <li><a href="#testimonies" tabindex="-1">Testimonios</a></li>
+          <li><a href="#about-us" tabindex="-1">Sobre nosotros</a></li>
+          <li><a href="#join-us" tabindex="-1">Unete</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger" aria-hidden="true"><i class="material-icons">menu</i></a>
       </div>
@@ -49,13 +51,13 @@
     <section class="section no-pad-bot">
       <div class="container">
 
-        <img class="header" src="images/logo.png" alt="logo image">
+        <img class="header" src="images/logo.png" alt="">
         <div class="row center">
-          <h5 class="sub-header col s12 white-text" tabindex="7">Sacale provecho a tu tiempo uniendote al Banco de Tiempo!</h5>
+          <h5 class="sub-header col s12 white-text" tabindex="0">Sacale provecho a tu tiempo uniendote al Banco de Tiempo!</h5>
         </div>
 
         <div class="row center">
-          <a href="#join-us" class="btn-large waves-effect waves-light red lighten-1" tabindex="8">Empieza ya</a>
+          <a href="#join-us" class="btn-large waves-effect waves-light red lighten-1" tabindex="0">Empieza ya</a>
         </div>
 
       </div>
@@ -68,8 +70,8 @@
     <section class="section">
       <div class="row">
         <div class="col s12 center">
-          <h4 tabindex="9">¿Que es un Banco de Tiempo?</h4>
-          <p class="light" tabindex="10">Un <em>Banco de Tiempo</em> es una herramienta con la cual un grupo de personas puede crear
+          <h4 tabindex="0">¿Que es un Banco de Tiempo?</h4>
+          <p class="light" tabindex="0">Un <em>Banco de Tiempo</em> es una herramienta con la cual un grupo de personas puede crear
             una alternativa
             económica social, en ella se intercambian habilidades entre los miembros sin utilizar dinero, únicamente se
             contabilizan las horas de servicio prestado y recibido.</p>
@@ -84,22 +86,22 @@
 
   <div class="container">
     <a class="anchor" id="features" aria-hidden="true"></a>
-    <section class="section" tabindex="11" aria-label="Caracteristicas">
+    <section class="section" tabindex="0" aria-label="Caracteristicas">
       <div class="row">
 
         <div class="col s12 m6">
           <div class="icon-block">
             <h2 class="center red-text" aria-hidden="true"><i class="large material-icons">forum</i></h2>
-            <h5 class="center" tabindex="12">Comunidades públicas</h5>
-            <p class="center light" tabindex="13">Unete a comunidades locales donde publicar y aceptar favores</p>
+            <h5 class="center" tabindex="0">Comunidades públicas</h5>
+            <p class="center light" tabindex="0">Unete a comunidades locales donde publicar y aceptar favores</p>
           </div>
         </div>
 
         <div class="col s12 m6">
           <div class="icon-block">
             <h2 class="center red-text" aria-hidden="true"><i class="large material-icons">group</i></h2>
-            <h5 class="center" tabindex="14">Comunidades de confianza</h5>
-            <p class="center light" tabindex="15">Crea o unete a comunidades privadas donde podrás realizar favores que requieran de
+            <h5 class="center" tabindex="0">Comunidades de confianza</h5>
+            <p class="center light" tabindex="0">Crea o unete a comunidades privadas donde podrás realizar favores que requieran de
               un cierto grado de confianza</p>
           </div>
         </div>
@@ -107,16 +109,16 @@
         <div class="col s12 m6">
           <div class="icon-block">
             <h2 class="center red-text" aria-hidden="true"><i class="large material-icons">access_time</i></h2>
-            <h5 class="center" tabindex="16">Balance de tiempo</h5>
-            <p class="center light" tabindex="17">Gestiona facilmente el tiempo que le has dedicado a la comunidad</p>
+            <h5 class="center" tabindex="0">Balance de tiempo</h5>
+            <p class="center light" tabindex="0">Gestiona facilmente el tiempo que le has dedicado a la comunidad</p>
           </div>
         </div>
 
         <div class="col s12 m6">
           <div class="icon-block">
             <h2 class="center red-text" aria-hidden="true"><i class="large material-icons">rate_review</i></h2>
-            <h5 class="center" tabindex="18">Valoraciones y confianza</h5>
-            <p class="center light" tabindex="19">Valora a otros usuarios para aumentar su reputación y ayudar a la comunidad</p>
+            <h5 class="center" tabindex="0">Valoraciones y confianza</h5>
+            <p class="center light" tabindex="0">Valora a otros usuarios para aumentar su reputación y ayudar a la comunidad</p>
           </div>
         </div>
 
@@ -132,17 +134,17 @@
   <section class="section">
     <div class="row">
       <div class="col s12 center">
-        <h3 class="section-header" tabindex="20">Testimonios</h3>
+        <h3 class="section-header" tabindex="0">Testimonios</h3>
 
         <div class="carousel carousel-slider">
           <div class="carousel-item" href="#one!">
             <div class="row">
               <div class="col s12 m6">
-                <div >
+                <div>
                   <img class="avatar-img" alt="foto de juan" src="images/avatar.png">
-                  <h3>Juan Garcia</h3>
-                  <h5>Profesor de natación</h5>
-                  <cite class="light">Suspendisse semper diam vel purus varius, in facilisis odio cursus. Pellentesque
+                  <h3 tabindex="0" aria-label="testimonio de Juan Garcia">Juan Garcia</h3>
+                  <h5 tabindex="0">Profesor de natación</h5>
+                  <cite class="light" tabindex="0">Suspendisse semper diam vel purus varius, in facilisis odio cursus. Pellentesque
                     viverra euismod
                     mi eget auctor. Nunc ac orci eleifend, ultrices nisl eu, auctor turpis. Nam iaculis in nisl non
                     ullamcorper.</cite>
@@ -155,10 +157,10 @@
             <div class="row">
               <div class="col s12 m6">
                 <div>
-                  <img class="avatar-img" alt="foto de juan" src="images/avatar.png">
-                  <h3>Paul Nielsen</h3>
-                  <h5>Escritor</h5>
-                  <cite class="light">Suspendisse semper diam vel purus varius, in facilisis odio cursus. Pellentesque
+                  <img class="avatar-img" alt="foto de paul" src="images/avatar.png">
+                  <h3 tabindex="0" aria-label="testimonio de Paul Nielsen">Paul Nielsen</h3>
+                  <h5 tabindex="0">Escritor</h5>
+                  <cite class="light" tabindex="0">Suspendisse semper diam vel purus varius, in facilisis odio cursus. Pellentesque
                     viverra euismod
                     mi
                     eget auctor. Nunc ac orci eleifend, ultrices nisl eu, auctor turpis. Nam iaculis in nisl non
@@ -173,9 +175,9 @@
               <div class="col s12 m6">
                 <div>
                   <img class="avatar-img" alt="foto de juan" src="images/avatar.png">
-                  <h3>Maria Fernandez</h3>
-                  <h5>Abogada</h5>
-                  <cite class="light">Suspendisse semper diam vel purus varius, in facilisis odio cursus. Pellentesque
+                  <h3 tabindex="0" aria-label="testimonio de Maria Fernandez">Maria Fernandez</h3>
+                  <h5 tabindex="0">Abogada</h5>
+                  <cite class="light" tabindex="0">Suspendisse semper diam vel purus varius, in facilisis odio cursus. Pellentesque
                     viverra euismod
                     mi
                     eget auctor. Nunc ac orci eleifend, ultrices nisl eu, auctor turpis. Nam iaculis in nisl non
@@ -191,7 +193,7 @@
   </section>
 
   <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/background3.jpg" alt="imagen de fondo"></div>
+    <div class="parallax"><img src="images/background3.jpg" alt=""></div>
   </div>
 
   <div class="container">
@@ -199,8 +201,8 @@
     <section class="section">
       <div class="row">
         <div class="col s12 center">
-          <h3 class="section-header">Sobre nosotros</h3>
-          <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed condimentum mi. Cras vel
+          <h3 class="section-header" tabindex="0">Sobre nosotros</h3>
+          <p class="light" tabindex="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed condimentum mi. Cras vel
             tristique nibh.
             Suspendisse
             non felis ut tortor condimentum elementum. Suspendisse suscipit nulla sapien, nec hendrerit sem maximus at.
@@ -210,7 +212,7 @@
             ultrices nisl eu, auctor turpis. Nam iaculis in nisl non ullamcorper. Aenean eu urna faucibus, dictum sapien
             eu, fermentum risus.</p>
 
-          <p class="light">Maecenas quis molestie dui. Phasellus semper odio quis sem viverra, eu rutrum felis
+          <p class="light" tabindex="0">Maecenas quis molestie dui. Phasellus semper odio quis sem viverra, eu rutrum felis
             consequat. Sed nec
             consequat lacus,
             vitae lacinia leo. Vivamus neque risus, ultricies sed auctor id, tristique scelerisque metus. Aliquam
@@ -234,43 +236,50 @@
     <section class="section">
       <div class="row">
         <div class="col s12 center">
-          <h3 class="section-header">Unete</h3>
+          <h3 class="section-header" tabindex="0" aria-label="formulario de inscripción">Unete</h3>
 
           <div class="row">
-            <form class="col s12">
+            <form id="join-form" class="col s12">
+              
+              <div class="row">
+                <div class="col s12">
+                  <div id="errors" role="alert" aria-atomic="true" aria-hidden="true" tabindex="0"></div>
+                </div>
+              </div>
 
               <div class="row">
                 <div class="input-field col s6">
-                  <input id="first_name" type="text" class="validate">
+                  <input id="first_name" type="text" class="validate" tabindex="0" aria-required="true">
                   <label for="first_name">Nombre</label>
                 </div>
                 <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
+                  <input id="last_name" type="text" class="validate" tabindex="0" aria-required="true">
                   <label for="last_name">Apellidos</label>
                 </div>
               </div>
 
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Correo electronico</label>
+                  <input id="email" type="email" class="validate" tabindex="0" aria-required="true">
+                  <label for="email">Correo electrónico</label>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col s12">
-                  <input class="btn red" type="submit" value="Registrarse" />
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col s12">
-                  <label>
-                    <input type="checkbox" />
-                    <span>Acepto los terminos y condiciones de uso</span>
+                  <label for="terms">
+                    <input type="checkbox" tabindex="0" id="terms" aria-required="true"/>
+                    <span>Acepto los términos y condiciones de uso</span>
                   </label>
                 </div>
               </div>
+
+              <div class="row">
+                <div class="col s12">
+                  <input class="btn red" type="submit" value="Registrarse" tabindex="0" aria-live/>
+                </div>
+              </div>
+
             </form>
           </div>
 
@@ -284,39 +293,39 @@
       <div class="row">
 
         <div class="col l4 s12">
-          <h5 class="white-text">Siguenos en</h5>
+          <h5 class="white-text" tabindex="0" aria-label="siguenos en nuestras redes sociales">Siguenos en</h5>
           <ul>
-            <li><a class="social-img" href="https://twitter.com"><img alt="twitter" src="images/twitter.png">Twitter</a>
+            <li><a class="social-img" href="https://twitter.com" tabindex="0" aria-label="nuestro perfil de Twitter"><img alt="twitter" src="images/twitter.png">Twitter</a>
             </li>
-            <li><a class="social-img" href="https://instagram.com"><img alt="instagram"
+            <li><a class="social-img" href="https://instagram.com" tabindex="0" aria-label="nuestro perfil de Instagram"><img alt="instagram"
                   src="images/instagram.png">Instagram</a></li>
           </ul>
         </div>
 
         <div class="col l4 s12">
-          <h5 class="white-text">Enlaces de interes</h5>
+          <h5 class="white-text" tabindex="0">Enlaces de interés</h5>
           <ul>
-            <li><a class="white-text" href="#!">Quienes somos</a></li>
-            <li><a class="white-text" href="#!">Tutorial</a></li>
-            <li><a class="white-text" href="#!"><abbr title="Preguntas realizadas frecuentemente">FAQ</abbr></a></li>
-            <li><a class="white-text" href="#!">Mapa del sitio</a></li>
-            <li><a class="white-text" href="#!">Estadisticas</a></li>
+            <li><a class="white-text" href="#!" tabindex="0">¿Quiénes somos?</a></li>
+            <li><a class="white-text" href="#!" tabindex="0">Tutorial</a></li>
+            <li><a class="white-text" href="#!" tabindex="0" aria-label="Preguntas realizadas frecuentemente"><abbr title="Preguntas realizadas frecuentemente">FAQ</abbr></a></li>
+            <li><a class="white-text" href="#!" tabindex="0">Mapa del sitio</a></li>
+            <li><a class="white-text" href="#!" tabindex="0">Estadisticas</a></li>
           </ul>
         </div>
 
         <div class="col l4 s12">
-          <h5 class="white-text">Aspectos legales</h5>
+          <h5 class="white-text" tabindex="0">Aspectos legales</h5>
           <ul>
-            <li><a class="white-text" href="#!"><abbr title="Ley General de Protección de Datos">LGPD</abbr></a></li>
-            <li><a class="white-text" href="#!">Condiciones de uso</a></li>
+            <li><a class="white-text" href="#!" tabindex="0" aria-label="Ley General de Protección de Datos"><abbr title="Ley General de Protección de Datos">LGPD</abbr></a></li>
+            <li><a class="white-text" href="#!" tabindex="0">Condiciones de uso</a></li>
           </ul>
         </div>
 
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-        Made using <a class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      <div class="container" tabindex="0">
+        Hecho usando <a class="red-text text-lighten-3" href="http://materializecss.com" tabindex="0">Materialize</a>
       </div>
     </div>
   </footer>
