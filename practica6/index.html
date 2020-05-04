@@ -11,12 +11,12 @@
 </head>
 
 <body>
-  <form id="form" action="https://jsonplaceholder.typicode.com/comments" method="get">
-    <label>Post ID</label>
-    <input type="number" name="postId" value="1" />
-    <input type="submit" value="Cargar" />
+  <form id="form" action="https://jsonplaceholder.typicode.com/comments" method="get" tabindex="0" aria-label="form">
+    <label aria-label="Post ID" tabindex="0">Post ID</label>
+    <input type="number" name="postId" value="1" aria-live="polite" aria-label="Amount of post ID"/>
+    <input type="submit" value="Cargar" aria-label="load" tabindex="0"/>
   </form>
-  <h2>Resultados:</h2>
+  <h2 tabindex="0" aria-label="Resultados">Resultados:</h2>
   <div id="results"></div>
 
 </body>

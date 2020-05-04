@@ -14,9 +14,14 @@ $("#form").submit(function(event) {
     $("#results").html("");
     $.each(response, function(index, value) {
       nameHeader = $("<h3></h3>").text("Name:");
+      nameHeader.attr('tabindex',0);
       nameText = $("<p></p>").text(value.name);
+      nameText.attr('tabindex',0);
       bodyHeader = $("<h3></h3>").text("Body:");
+      bodyHeader.attr('tabindex',0);
       body = $("<p></p>").text(value.body);
+      body.attr('tabindex',0);
+
       separator = $("<hr></hr>");
       $("#results").append(nameHeader, nameText, bodyHeader, body, separator);
     });
