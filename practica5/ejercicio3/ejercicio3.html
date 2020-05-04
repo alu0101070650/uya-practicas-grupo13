@@ -10,21 +10,21 @@
     <form name="converter" aria-label="Coin Exchanger">
         <script language="JavaScript" src="ejercicio3.js"></script>
         <table>
-            <tr>
+            <tr role="row">
                 <td aria-label="Euro" tabindex="0">Euro: </td>
-                <td><input type="text" name="Euro" onChange="dollarConverter()" aria-label="Amount of Euro"/></td>
+                <td><input input type="text" name="euro" onChange="euroConverter()" aria-live="polite" aria-label="Amount of Euro"/></td>
             </tr>
-            <tr>
+            <tr role="row">
                 <td aria-label="US Dollar" tabindex="0">US Dollar: </td>
-                <td><input type="text" name="dollar" onChange="dollarConverter()" aria-label="Amount of dollar"/></td>
+                <td><input type="text" name="dollar" onChange="dollarConverter()" aria-live="polite" aria-label="Amount of dollar"/></td>
             </tr>
             <tr role="row">
                 <td aria-label="British Pound" tabindex="0">British Pound:</td>
-                <td><input type="text" name="pound" onChange="poundConverter()" aria-label="Amount of british pound"/></td>
+                <td><input type="text" name="pound" onChange="poundConverter()" aria-live="polite" aria-label="Amount of british pound"/></td>
             </tr>
             <tr role="row">
                 <td aria-label="Japanese Yen" tabindex="0">Japanese Yen: </td>
-                <td><input type="text" name="yen" onChange="yenConverter()" aria-label="Amount of yen"/></td>
+                <td><input type="text" name="yen" onChange="yenConverter()" aria-live="polite" aria-label="Amount of yen"/></td>
             </tr>
         </table>
     </form>
