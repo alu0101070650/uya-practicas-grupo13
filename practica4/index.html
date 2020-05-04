@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="es">
 <html>
 
 <head>
@@ -19,20 +19,20 @@
 
 <body>
 
-  <a class="anchor" id="home"></a>
+  <a class="anchor" id="home" aria-hidden="true"></a>
   <div class="navbar-fixed">
     <nav class="red" role="navigation">
       <div class="nav-wrapper container">
         <ul class="right hide-on-med-and-down">
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#description">Que es un banco de tiempo?</a></li>
-          <li><a href="#features">Caracteristicas</a></li>
-          <li><a href="#testimonies">Testimonios</a></li>
-          <li><a href="#about-us">Sobre nosotros</a></li>
-          <li><a href="#join-us">Unete</a></li>
+          <li><a href="#home" tabindex="1">Inicio</a></li>
+          <li><a href="#description" tabindex="2">Que es un banco de tiempo?</a></li>
+          <li><a href="#features" tabindex="3">Caracteristicas</a></li>
+          <li><a href="#testimonies" tabindex="4">Testimonios</a></li>
+          <li><a href="#about-us" tabindex="5">Sobre nosotros</a></li>
+          <li><a href="#join-us" tabindex="6">Unete</a></li>
         </ul>
 
-        <ul id="nav-mobile" class="sidenav">
+        <ul id="nav-mobile" class="sidenav" aria-hidden="true">
           <li><a href="#home">Inicio</a></li>
           <li><a href="#description">Que es un banco de tiempo?</a></li>
           <li><a href="#features">Caracteristicas</a></li>
@@ -40,7 +40,7 @@
           <li><a href="#about-us">Sobre nosotros</a></li>
           <li><a href="#join-us">Unete</a></li>
         </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger" aria-hidden="true"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
@@ -51,11 +51,11 @@
 
         <img class="header" src="images/logo.png" alt="logo image">
         <div class="row center">
-          <h5 class="sub-header col s12 white-text">Sacale provecho a tu tiempo uniendote al Banco de Tiempo!</h5>
+          <h5 class="sub-header col s12 white-text" tabindex="7">Sacale provecho a tu tiempo uniendote al Banco de Tiempo!</h5>
         </div>
 
         <div class="row center">
-          <a href="#join-us" class="btn-large waves-effect waves-light red lighten-1">Empieza ya</a>
+          <a href="#join-us" class="btn-large waves-effect waves-light red lighten-1" tabindex="8">Empieza ya</a>
         </div>
 
       </div>
@@ -64,12 +64,12 @@
   </div>
 
   <div class="container">
-    <a class="anchor" id="description"></a>
+    <a class="anchor" id="description" aria-hidden="true"></a>
     <section class="section">
       <div class="row">
         <div class="col s12 center">
-          <h4>¿Que es un Banco de Tiempo?</h4>
-          <p class="light">Un <em>Banco de Tiempo</em> es una herramienta con la cual un grupo de personas puede crear
+          <h4 tabindex="9">¿Que es un Banco de Tiempo?</h4>
+          <p class="light" tabindex="10">Un <em>Banco de Tiempo</em> es una herramienta con la cual un grupo de personas puede crear
             una alternativa
             económica social, en ella se intercambian habilidades entre los miembros sin utilizar dinero, únicamente se
             contabilizan las horas de servicio prestado y recibido.</p>
@@ -79,44 +79,44 @@
   </div>
 
   <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/background1.jpg" alt="imagen de fondo"></div>
+    <div class="parallax"><img src="images/background1.jpg" alt=""></div>
   </div>
 
   <div class="container">
-    <a class="anchor" id="features"></a>
-    <section class="section">
+    <a class="anchor" id="features" aria-hidden="true"></a>
+    <section class="section" tabindex="11" aria-label="Caracteristicas">
       <div class="row">
 
         <div class="col s12 m6">
           <div class="icon-block">
-            <h2 class="center red-text"><i class="large material-icons">forum</i></h2>
-            <h5 class="center">Comunidades públicas</h5>
-            <p class="center light">Unete a comunidades locales donde publicar y aceptar favores</p>
+            <h2 class="center red-text" aria-hidden="true"><i class="large material-icons">forum</i></h2>
+            <h5 class="center" tabindex="12">Comunidades públicas</h5>
+            <p class="center light" tabindex="13">Unete a comunidades locales donde publicar y aceptar favores</p>
           </div>
         </div>
 
         <div class="col s12 m6">
           <div class="icon-block">
-            <h2 class="center red-text"><i class="large material-icons">group</i></h2>
-            <h5 class="center">Comunidades de confianza</h5>
-            <p class="center light">Crea o unete a comunidades privadas donde podrás realizar favores que requieran de
+            <h2 class="center red-text" aria-hidden="true"><i class="large material-icons">group</i></h2>
+            <h5 class="center" tabindex="14">Comunidades de confianza</h5>
+            <p class="center light" tabindex="15">Crea o unete a comunidades privadas donde podrás realizar favores que requieran de
               un cierto grado de confianza</p>
           </div>
         </div>
 
         <div class="col s12 m6">
           <div class="icon-block">
-            <h2 class="center red-text"><i class="large material-icons">access_time</i></h2>
-            <h5 class="center">Balance de tiempo</h5>
-            <p class="center light">Gestiona facilmente el tiempo que le has dedicado a la comunidad</p>
+            <h2 class="center red-text" aria-hidden="true"><i class="large material-icons">access_time</i></h2>
+            <h5 class="center" tabindex="16">Balance de tiempo</h5>
+            <p class="center light" tabindex="17">Gestiona facilmente el tiempo que le has dedicado a la comunidad</p>
           </div>
         </div>
 
         <div class="col s12 m6">
           <div class="icon-block">
-            <h2 class="center red-text"><i class="large material-icons">rate_review</i></h2>
-            <h5 class="center">Valoraciones y confianza</h5>
-            <p class="center light">Valora a otros usuarios para aumentar su reputación y ayudar a la comunidad</p>
+            <h2 class="center red-text" aria-hidden="true"><i class="large material-icons">rate_review</i></h2>
+            <h5 class="center" tabindex="18">Valoraciones y confianza</h5>
+            <p class="center light" tabindex="19">Valora a otros usuarios para aumentar su reputación y ayudar a la comunidad</p>
           </div>
         </div>
 
@@ -125,20 +125,20 @@
   </div>
 
   <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/background2.jpg" alt="imagen de fondo"></div>
+    <div class="parallax"><img src="images/background2.jpg" alt=""></div>
   </div>
 
-  <a class="anchor no-top" id="testimonies"></a>
+  <a class="anchor no-top" id="testimonies" aria-hidden="true"></a>
   <section class="section">
     <div class="row">
       <div class="col s12 center">
-        <h3 class="section-header">Testimonios</h3>
+        <h3 class="section-header" tabindex="20">Testimonios</h3>
 
         <div class="carousel carousel-slider">
           <div class="carousel-item" href="#one!">
             <div class="row">
               <div class="col s12 m6">
-                <div>
+                <div >
                   <img class="avatar-img" alt="foto de juan" src="images/avatar.png">
                   <h3>Juan Garcia</h3>
                   <h5>Profesor de natación</h5>
@@ -195,7 +195,7 @@
   </div>
 
   <div class="container">
-    <a class="anchor" id="about-us"></a>
+    <a class="anchor" id="about-us" aria-hidden="true"></a>
     <section class="section">
       <div class="row">
         <div class="col s12 center">
@@ -230,7 +230,7 @@
   </div>
 
   <div class="container">
-    <a class="anchor" id="join-us"></a>
+    <a class="anchor" id="join-us" aria-hidden="true"></a>
     <section class="section">
       <div class="row">
         <div class="col s12 center">
