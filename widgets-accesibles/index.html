@@ -21,25 +21,27 @@
 
   <ul class="collapsible">
     <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <button class="collapsible-header" aria-expanded="false" aria-controls="first-content"><i class="material-icons">filter_drama</i>First</button>
+      <div id="first-content" class="collapsible-body" aria-hidden="true"><span>Lorem ipsum dolor sit amet.</span></div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <button class="collapsible-header" aria-expanded="false" aria-controls="second-content"><i class="material-icons">place</i>Second</button>
+      <div id="second-content" class="collapsible-body" aria-hidden="true"><span>Lorem ipsum dolor sit amet.</span></div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <button class="collapsible-header" aria-expanded="false" aria-controls="third-content"><i class="material-icons">whatshot</i>Third</button>
+      <div id="third-content" class="collapsible-body" aria-hidden="true"><span>Lorem ipsum dolor sit amet.</span></div>
     </li>
   </ul>
 
   <nav>
     <div class="nav-wrapper">
       <div class="col s12">
-        <a href="#!" class="breadcrumb">First</a>
-        <a href="#!" class="breadcrumb">Second</a>
-        <a href="#!" class="breadcrumb">Third</a>
+        <ol>
+          <li><a href="#!" class="breadcrumb">First</a></li>
+          <li><a href="#!" class="breadcrumb">Second</a></li>
+          <li><a href="#!" class="breadcrumb" aria-current="location">Third</a></li>
+        </ol>
       </div>
     </div>
   </nav>

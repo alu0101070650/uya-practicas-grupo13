@@ -1,9 +1,15 @@
 var accordionElems = document.querySelectorAll('.collapsible');
-M.Collapsible.init(accordionElems, options);
+M.Collapsible.init(accordionElems, {
+  onCloseEnd: (element) => {
+    console.log(element);
+  }
+});
 
 var carouselElems = document.querySelectorAll(".carousel");
 M.Carousel.init(carouselElems, {
-  indicators: true
+  duration: 0,
+  indicators: true,
+  fullWidth: true
 });
 
 var nextSlide = instance => {
