@@ -17,3 +17,5 @@ Miembros del grupo 13 (martes):
 5. [Introducción a JavaScript](https://github.com/alu0101070650/uya-practicas-grupo13/tree/master/practica5)
 6. [Introducción a AJAX](https://github.com/alu0101070650/uya-practicas-grupo13/tree/master/practica6)
 7. [Firebase](https://github.com/alu0101070650/uya-practicas-grupo13/tree/master/firebase)
+8. [WAI-ARIA](https://github.com/alu0101070650/uya-practicas-grupo13/tree/master/practica8)
+9. [Widgets accesibles](https://github.com/alu0101070650/uya-practicas-grupo13/tree/master/widgets-accesibles)

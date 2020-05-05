@@ -1,0 +1,5 @@
+/* Custom Stylesheet */
+
+.breadcrumb::before {
+  visibility: hidden;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Widgets Accesibles</title>
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- Scripts -->
+  <script defer src="js/materialize.min.js"></script>
+  <script defer src="js/init.js"></script>
+</head>
+
+<body>
+
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header" aria-controls="first-content" tabindex="0"><i class="material-icons" aria-hidden="true">filter_drama</i>First</div>
+      <div id="first-content" class="collapsible-body" tabindex="0"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header" aria-controls="second-content" tabindex="0"><i class="material-icons" aria-hidden="true">place</i>Second</div>
+      <div id="second-content" class="collapsible-body" tabindex="0"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header" aria-controls="third-content" tabindex="0"><i class="material-icons" aria-hidden="true">whatshot</i>Third</div>
+      <div id="third-content" class="collapsible-body" tabindex="0"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+
+  <nav aria-label="breadcrumbs" tabindex="0">
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="#!" class="breadcrumb">First</a>
+        <a href="#!" class="breadcrumb">Second</a>
+        <a href="#!" class="breadcrumb" aria-current="location">Third</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="carousel carousel-slider center" aria-live="polite">
+    <a class="carousel-item red" href="#one!"><img src="images/background1.jpg"></a>
+    <a class="carousel-item green" href="#two!"><img src="images/background2.jpg"></a>
+    <a class="carousel-item blue" href="#three!"><img src="images/background3.jpg"></a>
+  </div>
+      
+</body>
+
+</html>
