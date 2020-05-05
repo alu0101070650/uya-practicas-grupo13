@@ -1,3 +1,5 @@
+// Accordion
+
 let accordionElems = document.querySelectorAll(".collapsible");
 M.Collapsible.init(accordionElems, {
   inDuration: 0,
@@ -28,23 +30,25 @@ accordionElems.forEach((accordionElem) => {
   });
 });
 
-var carouselElems = document.querySelectorAll(".carousel");
+// Carousel
+
+let carouselElems = document.querySelectorAll(".carousel");
 M.Carousel.init(carouselElems, {
   duration: 0,
   indicators: true,
   fullWidth: true,
 });
 
-var nextSlide = (instance) => {
-  setTimeout(() => {
-    instance.next();
-    nextSlide(instance);
-  }, 5000);
-};
+carouselElems.forEach((carouselElem) => {
+  let instance = M.Carousel.getInstance(carouselElem);
+  let prevButton = carouselElem.querySelector("button.prev");
+  let nextButton = carouselElem.querySelector("button.next");
 
-/*
-carouselElems.forEach((elem) => {
-  var instance = M.Carousel.getInstance(elem);
-  nextSlide(instance);
+  prevButton.onclick = () => {
+    instance.prev();
+  };
+
+  nextButton.onclick = () => {
+    instance.next();
+  };
 });
-*/

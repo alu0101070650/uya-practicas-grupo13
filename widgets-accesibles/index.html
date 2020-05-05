@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -19,37 +19,68 @@
 
 <body>
 
-  <ul class="collapsible">
+  <h1>Widgets Accesibles</h1>
+
+  <h2>Acordeón</h2>
+
+  <ul class="collapsible" aria-label="acordeón con 3 elementos desplegables" aria-live="polite" tabindex="0">
     <li>
-      <div class="collapsible-header" aria-controls="first-content" tabindex="0"><i class="material-icons" aria-hidden="true">filter_drama</i>First</div>
-      <div id="first-content" class="collapsible-body" tabindex="0"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header" aria-controls="first-content" tabindex="0"><i class="material-icons"
+          aria-hidden="true">filter_drama</i>Primero</div>
+      <div id="first-content" class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
     </li>
     <li>
-      <div class="collapsible-header" aria-controls="second-content" tabindex="0"><i class="material-icons" aria-hidden="true">place</i>Second</div>
-      <div id="second-content" class="collapsible-body" tabindex="0"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header" aria-controls="second-content" tabindex="0"><i class="material-icons"
+          aria-hidden="true">place</i>Segundo</div>
+      <div id="second-content" class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
     </li>
     <li>
-      <div class="collapsible-header" aria-controls="third-content" tabindex="0"><i class="material-icons" aria-hidden="true">whatshot</i>Third</div>
-      <div id="third-content" class="collapsible-body" tabindex="0"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header" aria-controls="third-content" tabindex="0"><i class="material-icons"
+          aria-hidden="true">whatshot</i>Tercero</div>
+      <div id="third-content" class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
     </li>
   </ul>
 
-  <nav aria-label="breadcrumbs" tabindex="0">
+  <h2>Migas de pan</h2>
+
+  <nav aria-label="migas de pan con 3 elementos">
     <div class="nav-wrapper">
       <div class="col s12">
-        <a href="#!" class="breadcrumb">First</a>
-        <a href="#!" class="breadcrumb">Second</a>
-        <a href="#!" class="breadcrumb" aria-current="location">Third</a>
+        <a href="#!" class="breadcrumb">Primero</a>
+        <a href="#!" class="breadcrumb">Segundo</a>
+        <a href="#!" class="breadcrumb" aria-current="location">Tercero</a>
       </div>
     </div>
   </nav>
 
-  <div class="carousel carousel-slider center" aria-live="polite">
-    <a class="carousel-item red" href="#one!"><img src="images/background1.jpg"></a>
-    <a class="carousel-item green" href="#two!"><img src="images/background2.jpg"></a>
-    <a class="carousel-item blue" href="#three!"><img src="images/background3.jpg"></a>
+  <h2>Carrousel</h2>
+
+  <div id="carousel" class="carousel carousel-slider center" aria-roledescription="carousel" role="region"
+    aria-live="polite" aria-label="carrousel con 4 diapositivas" tabindex="0">
+    <div class="carousel-item red white-text" href="#one!" aria-label="panel 1 de 4" aria-roledescription="slide" role="group">
+      <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p>
+    </div>
+    <div class="carousel-item amber white-text" href="#two!" aria-label="panel 2 de 4" aria-roledescription="slide" role="group">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item green white-text" href="#three!" aria-label="panel 3 de 4" aria-roledescription="slide" role="group">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!" aria-label="panel 4 de 4" aria-roledescription="slide" role="group">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
+    <div class="carousel-buttons carousel-fixed-item center">
+      <button class="btn white black-text waves-effect prev" aria-controls="carousel" aria-label="diapositiva anterior">
+        &lt; Anterior</button>
+      <button class="btn white black-text waves-effect next" aria-controls="carousel"
+        aria-label="diapositiva siguiente">Siguiente &gt;</button>
+    </div>
   </div>
-      
+
 </body>
 
 </html>
