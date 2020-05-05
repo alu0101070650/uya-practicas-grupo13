@@ -21,37 +21,33 @@
 
   <ul class="collapsible">
     <li>
-      <button class="collapsible-header" aria-expanded="false" aria-controls="first-content"><i class="material-icons">filter_drama</i>First</button>
-      <div id="first-content" class="collapsible-body" aria-hidden="true"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header" aria-controls="first-content" tabindex="0"><i class="material-icons" aria-hidden="true">filter_drama</i>First</div>
+      <div id="first-content" class="collapsible-body" tabindex="0"><span>Lorem ipsum dolor sit amet.</span></div>
     </li>
     <li>
-      <button class="collapsible-header" aria-expanded="false" aria-controls="second-content"><i class="material-icons">place</i>Second</button>
-      <div id="second-content" class="collapsible-body" aria-hidden="true"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header" aria-controls="second-content" tabindex="0"><i class="material-icons" aria-hidden="true">place</i>Second</div>
+      <div id="second-content" class="collapsible-body" tabindex="0"><span>Lorem ipsum dolor sit amet.</span></div>
     </li>
     <li>
-      <button class="collapsible-header" aria-expanded="false" aria-controls="third-content"><i class="material-icons">whatshot</i>Third</button>
-      <div id="third-content" class="collapsible-body" aria-hidden="true"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header" aria-controls="third-content" tabindex="0"><i class="material-icons" aria-hidden="true">whatshot</i>Third</div>
+      <div id="third-content" class="collapsible-body" tabindex="0"><span>Lorem ipsum dolor sit amet.</span></div>
     </li>
   </ul>
 
-  <nav>
+  <nav aria-label="breadcrumbs" tabindex="0">
     <div class="nav-wrapper">
       <div class="col s12">
-        <ol>
-          <li><a href="#!" class="breadcrumb">First</a></li>
-          <li><a href="#!" class="breadcrumb">Second</a></li>
-          <li><a href="#!" class="breadcrumb" aria-current="location">Third</a></li>
-        </ol>
+        <a href="#!" class="breadcrumb">First</a>
+        <a href="#!" class="breadcrumb">Second</a>
+        <a href="#!" class="breadcrumb" aria-current="location">Third</a>
       </div>
     </div>
   </nav>
 
-  <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
-    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+  <div class="carousel carousel-slider center" aria-live="polite">
+    <a class="carousel-item red" href="#one!"><img src="images/background1.jpg"></a>
+    <a class="carousel-item green" href="#two!"><img src="images/background2.jpg"></a>
+    <a class="carousel-item blue" href="#three!"><img src="images/background3.jpg"></a>
   </div>
       
 </body>
