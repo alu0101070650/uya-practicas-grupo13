@@ -32,19 +32,37 @@ var carouselElems = document.querySelectorAll(".carousel");
 M.Carousel.init(carouselElems, {
   duration: 0,
   indicators: true,
-  fullWidth: true,
+  fullWidth: true
 });
 
-var nextSlide = (instance) => {
+var nextSlide = instance => {
   setTimeout(() => {
     instance.next();
     nextSlide(instance);
   }, 5000);
 };
 
-/*
-carouselElems.forEach((elem) => {
+carouselElems.forEach(elem => {
   var instance = M.Carousel.getInstance(elem);
   nextSlide(instance);
 });
-*/
+
+var instance = M.Carousel.init({
+  fullWidth: true,
+  indicators: true
+});
+
+$(document).ready(function () {
+  $('.carousel').carousel();
+
+
+  // function for next slide
+  $('.next').click(function () {
+    $('.carousel').carousel('next');
+  });
+
+  // function for prev slide
+  $('.prev').click(function () {
+    $('.carousel').carousel('prev');
+  });
+});

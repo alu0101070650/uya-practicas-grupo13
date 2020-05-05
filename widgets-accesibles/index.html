@@ -15,6 +15,7 @@
   <!-- Scripts -->
   <script defer src="js/materialize.min.js"></script>
   <script defer src="js/init.js"></script>
+  <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -44,11 +45,27 @@
     </div>
   </nav>
 
-  <div class="carousel carousel-slider center" aria-live="polite">
-    <a class="carousel-item red" href="#one!"><img src="images/background1.jpg"></a>
-    <a class="carousel-item green" href="#two!"><img src="images/background2.jpg"></a>
-    <a class="carousel-item blue" href="#three!"><img src="images/background3.jpg"></a>
+  <div class="carousel carousel-slider center" tabindex="1" aria-roledescription="carousel" aria-live="polite">
+    <div class="carousel-item red white-text" href="#one!" aria-live="off" aria-label="Panel 1 de 4" aria-roledescription="slide">
+      <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p>
+    </div>
+    <div class="carousel-item amber white-text" href="#two!" aria-live="off" aria-label="Panel 2 de 4" aria-roledescription="slide">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item green white-text" href="#three!" aria-live="off" aria-label="Panel 3 de 4" aria-roledescription="slide">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!" aria-live="off" aria-label="Panel 4 de 4" aria-roledescription="slide">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
   </div>
+
+  <div class="btn green prev waves-effect" tabindex="0" aria-label="Anterior">Prev</div>
+  <div class="btn green next waves-effect" tabindex="0" aria-label="Siguiente">Next</div>
       
 </body>
 
