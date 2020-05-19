@@ -5,7 +5,6 @@ M.Parallax.init(parallaxElems, {});
 var sidenavElems = document.querySelectorAll(".sidenav");
 M.Sidenav.init(sidenavElems, {});
 
-// Carousel
 let carouselElems = document.querySelectorAll(".carousel");
 M.Carousel.init(carouselElems, {
   duration: 0,

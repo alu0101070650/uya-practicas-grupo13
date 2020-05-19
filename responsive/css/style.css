@@ -1,5 +1,9 @@
 /* Custom Stylesheet */
 
+.mt-15 {
+  margin-top: 15px;
+}
+
 #index-banner {
   height: 70vh;
   display: flex;
@@ -31,7 +35,7 @@ a.anchor.no-top {
 }
 
 .social-img {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   color: white;
   margin-bottom: 10px;
@@ -55,12 +59,11 @@ a.anchor.no-top {
 }
 
 #testimonies-carousel {
-  height: 500px !important;
+  height: 550px !important;
 }
 
 .carousel-buttons {
-  margin-top: 10px;
-  bottom: 50x;
+  bottom: 30px !important;
 }
 
 .carousel-item:not(.active) {
@@ -75,6 +78,15 @@ a.anchor.no-top {
 .carousel-item > .row > .col {
   text-align: center;
   margin: auto;
+}
+
+.carousel .indicators .indicator-item {
+  margin: 0 4px !important;
+  background-color: lightgrey;
+}
+
+.carousel .indicators .indicator-item.active {
+  background-color: grey;
 }
 
 .avatar-img {
@@ -112,5 +124,17 @@ a.anchor.no-top {
 @media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  #index-banner {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  #testimonies-carousel {
+    height: 600px !important;
   }
 }
